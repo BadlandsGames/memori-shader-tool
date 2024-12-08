@@ -1,4 +1,4 @@
 # memori-shader-tool
-Shader compiler for the Memori Engine.
+Tiny shader converter for the Memori Engine.
 
 Uses slang shaders.

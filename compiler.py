@@ -2,9 +2,8 @@ import os
 import sys
 
 inputfile = sys.argv[1]
+outputfile = sys.argv[2]
 
-os.system("slangc " + inputfile + " -target hlsl -o out.hlsl")
-os.system("ShaderConductor.exe -i out.hlsl -o output -t hlsl -s cryengine")
-os.system("mv out.hlsl " + inputfile.split(".")[0] + ".hlsl")
+os.system("slangc " + inputfile + " -target hlsl -o " + outputfile)
+os.system("ShaderConductor.exe -i " + outputfile + " -o output -t hlsl -s cryengine")
 os.system("clear")
-print("generated file: " + inputfile.split(".")[0] + ".hlsl")
