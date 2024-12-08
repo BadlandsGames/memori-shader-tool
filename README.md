@@ -2,6 +2,7 @@
 Tiny shader converter for the Memori Engine.
 
 Requirements:
+- Microsoft ShaderConductor (please, drop the .exe file)
 - Microsoft Visual Studio
 - Slang Shader Compiler
 - Git
