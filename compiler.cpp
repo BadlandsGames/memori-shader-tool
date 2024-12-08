@@ -21,4 +21,19 @@ int main(int argc, char* argv[]) {
     cmd2.append(" ");
     cmd2.append("-i");
     cmd2.append(" ");
+    cmd2.append(outputfile);
+    cmd2.append(" ");
+    cmd2.append("-o");
+    cmd2.append(" ");
+    cmd2.append("output");
+    cmd2.append(" ");
+    cmd2.append("-t");
+    cmd2.append(" ");
+    cmd2.append("hlsl");
+    cmd2.append(" ");
+    cmd2.append("-s");
+    cmd2.append(" ");
+    cmd2.append("cryengine");
+    system(cmd1);
+    system(cmd2);
 }
