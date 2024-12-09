@@ -7,3 +7,6 @@ Usage: <code>MemoriShaderTool(.exe/.elf) [input file] [output file] [windows ("w
 
 Example:
 <code>MemoriShaderTool.exe water.slang water.hlsl win</code>
+
+Another Example:
+<code>./MemoriShaderTool.elf particle.slang particle.hlsl linux</code>
