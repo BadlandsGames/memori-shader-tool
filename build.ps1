@@ -11,6 +11,8 @@ if($choice_os -eq "win") {
     g++ -o MemoriShaderTool.elf compiler.cpp
     git clone https://github.com/microsoft/ShaderConductor.git
     cd ShaderConductor
+    mkdir Build
+    cd Build
     objcopy --input-format=pei-x86-64 --output-format=elf64-x86-64 ShaderConductor.dll ShaderConductor.elf
 } else {
     Write-Host "Error: Operating System doesn't exist."
