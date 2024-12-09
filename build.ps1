@@ -1,4 +1,6 @@
 Write-Host "Enter your operating system:"
+Write-Host "win: Windows"
+Write-Host "linux: Linux"
 $choice_os = Read-Host -Prompt "choice"
 
 if($choice_os -eq "win") {
@@ -21,6 +23,7 @@ if($choice_os -eq "win") {
     mkdir MemoriShaderTool
     mv MemoriShaderTool.elf MemoriShaderTool\MemoriShaderTool.elf
     mv ShaderConductor.elf MemoriShaderTool\ShaderConductor.elf
+    rm -rf ShaderConductor
 } else {
     Write-Host "Error: Operating System doesn't exist."
 }
