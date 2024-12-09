@@ -13,7 +13,14 @@ if($choice_os -eq "win") {
     cd ShaderConductor
     mkdir Build
     cd Build
-    objcopy --input-format=pei-x86-64 --output-format=elf64-x86-64 ShaderConductor.dll ShaderConductor.elf
+    cmake -DCMAKE_BUILD_TYPE=Release ..
+    cmake --build .
+    objcopy --input-format=pei-x86-64 --output-format=elf64-x86-64 ShaderConductor.dll ../../ShaderConductor.elf
+    cd ..
+    cd ..
+    mkdir MemoriShaderTool
+    mv MemoriShaderTool.elf MemoriShaderTool\MemoriShaderTool.elf
+    mv ShaderConductor.elf MemoriShaderTool\ShaderConductor.elf
 } else {
     Write-Host "Error: Operating System doesn't exist."
 }
