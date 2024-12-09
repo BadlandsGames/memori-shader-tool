@@ -9,6 +9,8 @@ if($choice_os -eq "win") {
     move ShaderConductor.exe MemoriShaderTool\ShaderConductor.exe
 } elseif($choice_os -eq "linux") {
     g++ -o MemoriShaderTool.elf compiler.cpp
+    git clone https://github.com/microsoft/ShaderConductor.git
+    cd ShaderConductor
     objcopy --input-format=pei-x86-64 --output-format=elf64-x86-64 ShaderConductor.dll ShaderConductor.elf
 } else {
     Write-Host "Error: Operating System doesn't exist."
