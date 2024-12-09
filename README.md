@@ -1,7 +1,7 @@
 # Memori Shader Tool
 Tiny shader converter for the Memori Engine.
 
-[![GitHub][repo-badge]][repo]
+[![GitHub][repo-badge]][repo]]
 
 Note: For Windows, you have to drop Microsoft ShaderConductor as <code>ShaderConverter.exe</code>.
 
